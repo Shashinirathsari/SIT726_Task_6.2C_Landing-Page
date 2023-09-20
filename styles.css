@@ -1,0 +1,602 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    display: block;
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Style for the empowering message */
+.empowering-message {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Add new styles for the hero shot */
+#hero-shot {
+    position: relative;
+    text-align: center;
+}
+
+#hero-shot img {
+    max-width: 100%;
+}
+
+/* Hero Shot Section */
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Shot Section */
+.main-headline {
+    font-size: 40px; /* Increased font size and made it bolder */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #95C22B;
+}
+
+.supporting-headline {
+    font-size: 24px;
+}
+
+/* Styles for the CTA button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #45A049;
+}
+
+
+/* Benefits Section */
+#benefits {
+    background-image: url('IMG_6536.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Style for the "Benefits of EcoExchange" heading */
+#benefits h2 {
+    font-size: 36px;
+    color: #013131;
+    margin-bottom: 40px;
+}
+
+/* Style for the benefits list items */
+#benefits ul li {
+    font-size: 18px;
+    color: #085a5d;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Add a green accent color to list items */
+#benefits ul li:before {
+    content: "\2022";
+    color: #05504a;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+/* Style for individual benefit items */
+#benefits li {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for benefit items */
+#benefits li:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for benefit item headings */
+#benefits li h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for benefit item descriptions */
+#benefits li p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #benefits li {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* What Our Users Say Section */
+#users-say {
+    background-image: url('IMG_094854.PNG');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#users-say h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+#social-proof {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#social-proof h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #777;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    max-width: 80px;
+    margin-top: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* About Us Section */
+#about-us {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+    background: url('IMG_9872.jpg') center/cover no-repeat;
+}
+
+.about-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.about-item {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-item p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .about-item {
+        max-width: 100%;
+    }
+}
+
+/* Product Features Section */
+#product-features {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+    background-image: url('IMG_6742.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Add this CSS to make the background fixed and add a blur effect */
+.product-features::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    filter: blur(5px);
+}
+
+/* Style for the "Product Features" heading */
+#product-features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.feature:nth-child(odd) {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.feature:nth-child(even) {
+    float: right;
+    clear: both;
+    width: 100%;
+}
+
+.feature:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .feature {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Pricing Section */
+#pricing {
+    background-image: url('IMG_2195.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Style for the "Pricing" heading */
+#pricing h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Style for the pricing table */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Style for table headers */
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Style for table data cells */
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+/* Style for the "Free Membership" row */
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Style for the "Premium Membership" row */
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* Style for the pricing table cells */
+#pricing td {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for the pricing table rows */
+#pricing tr:last-child {
+    border-bottom: none;
+}
+
+/* Style for the "Join Now" button */
+#pricing .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#pricing .cta-button:hover {
+    background-color: #45A049;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #pricing table {
+        max-width: 100%;
+    }
+}
+
+/* Contact Form Styles */
+#contact-form {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-right: 60px;
+}
+
+.contact-content {
+    flex: 2;
+    padding: 20px;
+}
+
+#contact-form h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-form label[for="name"] {
+    margin-top: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
